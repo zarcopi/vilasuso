@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1	 {text-align: center; font-weight: bolder;}
+h4   {color: highlight; font-weight: bold; }
+div	 {padding-left: 2em; }
+p    {line-height: 50%; padding-left: 4em;}
+</style>
+<meta charset="ISO-8859-1">
+<title>Ejercicios Java</title>
+</head>
+<body>
+<h1>Ejercicios Java</h1>
+<h4>Ejercicio OperadoresAritmeticos (Operadoraciones con números, captura de datos)</h4>
+<div>Main que pida dos numeros y calcule la suma, la restas, la multiplicacion y la division</div>
+
+<h4>Ejercicio ComparadorNumeros (Operadoraciones con números, bucles)</h4>
+<div>Main que pida numeros al usuario hasta que introduzca -1</div>
+<div>Al acabar que pinte el mayor, el menor, la suma, la media, la suma de los negativos y la suma de los positivos</div>
+
+<h4>Ejercicio PartirFraseBasica (manipulacion strings, bucles)</h4>
+<div>Main que pida un texto y pinte las palabras por separado (una por linea)</div>
+
+<h4>Ejercicio PartirFrase (manipulacion strings, bucles)</h4>
+<div>Main que pida un texto y pinta las palabra sde mas de 4 letras , por separado, en mayusculas,</div>
+<div>indicando la longitud de cada palabra</div>
+
+<h4>Ejercicio ContarLetrasEnString (manipulacion strings, condicionales)</h4>
+<div>Main que pida un texto y cuente las vocales</div>
+
+<h4>Ejercicio StringBufferTest (rendimiento StringBuffer vs String)</h4>
+<div>Completar Clase Java con los bucles</div>
+
+<h4>Ejercicio Contrasena (manipulacion strings, condicionales)</h4>
+<div>Main que pida una contraseña.</div>
+<div>Si el usuario introduce "eureka" muestra un mensaje validando la contraseña y acaba</div>
+<div>Si falla tres veces, sale mostrando un error.</div>
+
+<h4>Ejercicio Herencia (interfaces, clases abstractas, implementar metodos)</h4>
+<ol type ="1">
+	<li>Crear interfaz Animal con un metodo "mueve" y "come"</li>
+	<li>Crear clase abstracta Mamifero que implementa Animal y el metodo mueve (que pinte "El animal se mueve")</li>
+	<li>Crear clase Reptil que implementa Animal y el metodo mueve </li>
+	<li>Crear clase Perro que extienda Mamifero (que pinte "El perro se mueve") y que tenga un metodo propio "ladra" (que pinte "El perro ladra")</li>
+	<li>Hacer un Main que ejecute los metodos de Mamifero, Perro y Reptil</li>
+</ol>
+
+<h4>Ejercicio acceso fichero (acceso a ficheros, xml, ejemplo de uso de API Java)</h4>
+<div>Generar fichero xml con esta informacion</div>
+ <p>&lt;head&gt;</p>
+ <p>&emsp;&emsp;&lt;hora&gt;fecha hora actual&lt;\hora&gt;</p>
+ <p>&emsp;&emsp;&lt;input&gt;Texto introducido por usuario&lt;\input&gt;</p>
+ <p>&lt;\head&gt;</p>
+   
+ 
+
+
+
+ 
+<h4>Ejercicios queries (implementación de queries)</h4>
+<ol type ="1">
+	<li>Sacar  ename, sal, sal sunmando 300 (Sum)</li>
+	<li>Sacar los empleados con salario entre 100 y 1500 (where)</li>
+	<li> Sacar ename y job concatenados un una columna (Concat)</li>
+	<li>Sacar la union de emp y dept (join)</li>
+	<li>Sacar el outer join de emp y dept (join) </li>
+</ol>
+
+<h4>Ejercicio AuctionTestDriven (uso patron observador)</h4>
+<ol type ="1">
+	<li>Crea tres bidder (Observador) y un Auctioneer (Sujeto obserbado)</li>
+	<li>Subscribe los tres bidder a una subasta y el dos de ellos a otra</li>
+	<li> Sacar ename y job concatenados un una columna (Concat)</li>
+	<li>Genera una puja (evento) en cada subasta y notifica los observadores</li>
+</ol>
+
+<h4>Ejercicio FileSystemTestDrive (uso patron Composite)</h4>
+<ol type ="1">
+	<li>Crea una variable tipo FileSystem y define una estructura con varias carpetas y archivos</li>
+	<li>Ejecuta el metodo printFiles para pintar la estructura en arbol</li>
+</ol>
+
+<h4>Ejercicio LoginTest (uso patron Singleton)</h4>
+<ol type ="1">
+	<li>Usar metodo getSesion de la clase Login</li>
+	<li>Probar los tres escenarios de closeSesion de la clase Login</li>
+</ol>
+
+
+<h4>Ejercicio Final Baraja (Objetos Java, metodos/atributos, switch, encapsulación) </h4>
+<ol type ="1">
+	<li>Crear clase carta con dos atributos: palo y numero</li>
+	<li>Crear variable estatica con una lista de strings con los palos: "oros", "bastos", "espadas", "copas"</li>
+	<li>Crear constructor de clase que acepte de entrada un palo y un numero (opcional, implementar validaciones)</li>
+	<li>Crear un metodo getNumero que devuelva el numero salvo los palos especiales que devuelva el nombre: (1 -as, 11 -sota, 12-caballo, -13 - rey)</li>
+	<li>Crear metodo toString (sobreescribe el toString por defecto) para que pinte la carta asi: "As de bastos", "5 de espadas", "sota de copas",...</li>
+	<li>Crear un metodo equals que acepte de entrada una carta y devuelva si es la misma</li>
+	<li>Crear un metodo getCuenta que acepte un ArrayList de cartas y devuelva la suma. Debera contar sota, caballo y rey como 10 (no como 11, 12, 13)</li>
+	<li>Crear clase Baraja con un atributo ArrayList de cartas</li>
+	<li>Crear constructor, sin parametros, que incializa las cartas creando todas las cartas posibles</li>
+	<li>Crear metodo barajar que mezcla las cartas (Collections.shuffle)</li>
+	<li>Crear metodo sacar que acepte un numero n y devuelva un ArrayList de n cartas (y las quite)</li>
+	<li>Crear metodo sacar sin parametros y devuelva la primera carta (y la quite)</li>
+	<li>Crear un Main que ejecute las siguientes acciones:</li>
+	<ul>
+		<li>Crea una baraja</li>
+		<li>La mezcla</li>
+		<li>Saca 5 cartas</li>
+		<li>Muestra las cartas sacadas</li>
+		<li>Muestra la suma de las cartas sacadas</li>
+	</ul>
+	<li>Despues de mostrar las cartas, que pregunte al usuario si quiere mas y que siga hasta que diga que no o se quede sin cartas el mazo</li>
+</ol>
+	
+</body>
+</html>
